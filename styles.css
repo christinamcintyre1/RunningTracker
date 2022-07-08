@@ -16,6 +16,10 @@ body {
   text-align: center;
 }
 
+svg {
+  max-width: 80%;
+}
+
 form {
   text-align: center;
 }
@@ -27,6 +31,7 @@ label {
 input[type="number"] {
   font-family: inherit;
   background: rgb(230, 255, 255);
+
   width: 80%;
   margin: 1rem 0;
   padding: 0.8rem 0;
@@ -56,8 +61,12 @@ ul {
 }
 
 li {
+    padding: 1rem 1.5rem;
+    overflow: hidden;
+    text-align:center;
     border: 1px solid;
-    padding:1rem 1.5rem;
+    overflow: hidden;
+    border-radius: 3px;
 }
 
 .entriesWrapper {
@@ -68,10 +77,13 @@ li {
 .entriesWrapper h3 {
     margin: 0;
     text-align:center;
+    font-size: 1.6rem;
     font-weight: lighter;
 }
 
 .data {
+  display: flex;
+  flex-direction: column;
     font-size: 1.4rem;
 }
 
@@ -103,5 +115,29 @@ li {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background: conic-gradient(#70db70 50%, #2d3740 50%)
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#progressCenter {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: #1c262f;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    width: 60%;
+  }
+
+  svg {
+    max-width: 50%;
+  }
+
+  input[type='number'] {
+    width: 40%;
+  }
 }
